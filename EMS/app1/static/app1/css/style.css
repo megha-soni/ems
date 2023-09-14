@@ -1,0 +1,212 @@
+body{
+    background-color: black;
+}
+.box img{
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.box1{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    background-color: black;
+    border: 1px solid aqua;
+    box-shadow: 15px 15px 50px aqua;
+    border-radius: 30px;
+    margin-left: -58%;
+    margin-top: 5%;  
+}
+h1{
+    color: white;
+    padding-top: 1.5em;
+}
+button{
+    width: 200px;
+    padding: 1em;
+    background-color: black;
+    border-radius: 50px;
+    border: 1px solid aqua;
+    color: aqua;
+}
+button:hover{
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+}
+
+.box2{
+    position: relative;
+    height: 350px;
+    width: 350px;
+    background-color: transparent;
+    border: 1px solid gray;
+    box-shadow: 15px 15px 50px white;
+    border-radius: 30px;
+    margin-left: 50%;
+    margin-top: -26%;  
+}
+#head{
+    color: aqua;
+    position: relative;
+    margin-top: 1.5em;
+    font-size: 3em;
+    font-weight: 100;
+    text-shadow: 15px 15px 50px aqua;
+    margin-left: 2em;
+}
+.reges1 img{
+    position: absolute;
+    width: 1370px;
+    height: 620px;
+    top: 0;
+   left: 0;
+}
+.reges{
+    position: relative;
+    /* border: 2px solid white; */
+    height: 450px;
+    width: 550px;
+    margin-left: 30%;
+    padding-top: 8%;
+}
+.reges table td{
+    color: white;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+.reges table td input{
+width: 300px;
+padding: 0.5em;
+margin-top: 1em;
+margin-left: -10em;
+}
+#ubtn{
+   margin-left: 6em;
+}
+#msg{
+    position: relative;
+    font-size: 2em;
+    color: aqua;
+    text-shadow: 15px 15px 50px aqua;
+}
+#img1{
+    position: absolute;
+    top: 0;
+   left: 0;
+}
+.log{
+    position: relative;
+    height: 220px;
+    width: 300px;
+    padding: 3em;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 15px 15px 95px whitesmoke;
+    top: -1em;
+    left: 20em;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+.log input{
+    margin-top: 3em;
+}
+#lbtn{
+    margin-top: 6em;
+    margin-left: 4.5em;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    box-shadow: 5px 5px 10px white;
+    width: 180px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#head1{
+    color: aqua;
+    position: relative;
+    margin-top: -1.5em;
+    font-size: 3em;
+    font-weight: 100;
+    text-shadow: 15px 15px 50px aqua;
+    margin-left: 8em;
+}
+
+.ad img{
+    position: absolute;
+    width: 1370px;
+    height: 620px;
+    top: 0;
+   left: 0;
+}
+.ad1{
+    position: relative;
+    box-shadow: 5px 5px 50px rgb(109, 109, 109);
+    margin-left: 30em;
+    padding: 1em;
+    width: 350px;
+    height: 350px;
+}
+.ad1 table td input{
+padding: 0.4em;
+margin-top: 1em;
+margin-left: -14em;
+}
+#rbtn{
+    width: 250px;
+    margin-left: 3em;
+    margin-top: 1.5em;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 0.7em;
+}
+.udb img{
+    position: absolute;
+    width: 1360px;
+    height: 610px; 
+    top: 0;
+    left: 0;
+}
+.udb1{
+    position: relative;
+    box-shadow: 15px 15px 50px white;
+    margin-left: 30em;
+    padding: 1em;
+    width: 350px;
+    height: 350px;
+}
+.form{
+    background-color: white;
+    font-weight: bold;
+    width: 1450px;
+    height: 610px;
+    margin-top: -8em;
+    margin-left: -1em;
+    padding-top: 6em;
+
+}
+.form input, select {
+  width: 300px;
+  padding: 12px 20px;
+  margin-left: -10em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form input[type=submit] {
+  width: 200px;
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 3em;
+ margin-left: 9em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+

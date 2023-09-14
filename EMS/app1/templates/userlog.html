@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+</head>
+<body>
+    <div class="log1">
+        <img src="{% static 'app1/images/img3.png' %}" id="img1" alt="" height="600" width="1340">
+    <h1> Welcome to User login Page</h1>
+    <h2 id="head1">{{msg}}</h2>
+    <form action="{% url 'userlog' %}" method="post">
+        {% csrf_token %}
+        <div class="log">
+          Email :&nbsp;&nbsp; <input type="email" name="email"> <br>
+         Password :  <input type="password" name="passw">
+         <input type="submit" id="lbtn">
+</div>
+    </form>
+</div>
+</body>
+</html>

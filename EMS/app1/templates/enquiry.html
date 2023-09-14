@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Form</title>
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+</head>
+<body bgcolor="lightblue">
+    <center>
+        <div class="form">
+            <center>   <h1 style="color: red;">Query Form</h1></center>
+        <form action="{% url 'einsert' %}" method="post">
+            {% csrf_token %}
+<table>
+ <tr>
+    <td>STUDENT NAME : </td> 
+    <td>  <input type="text" id="fname" name="sname" required></td>
+</tr>
+ <tr>
+    <td>CONTACT :</td> 
+    <td> <input type="text" id="lname" name="contact" required></td>
+</tr>
+ <tr>
+<td> EMAIL : </td> 
+    <td>  <input type="email" name="email" id="country" required></td>
+</tr>
+ <tr>
+<td> QUERY : </td> 
+<td>  <input type="text" name="enquiry" id="country" required></td>
+</tr>
+ <tr>
+    <td> <input type="submit" name="submit" value="SUBMIT">
+ </td>
+</tr>
+   
+</table>
+  </form>
+</div>
+    </center>
+</body>
+</html>

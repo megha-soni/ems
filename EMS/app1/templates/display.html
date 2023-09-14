@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: navy;
+  color: white;
+}
+#dbtn{
+    width: 150px;
+    background-color: red;
+    color: white;
+    font-weight: white;
+    padding: 1em;
+    border-radius: 10px;
+    margin-top: 2em;
+    margin-left: 45%;
+}
+    </style>
+</head>
+<body>
+   <center><h1>ENQURIES..</h1></center>
+    <table id="customers">
+        <tr>
+            <th>ID</th>
+            <th>STUDENTNAME</th>
+            <th>CONTACT</th>
+            <th>EMAIL</th>
+            <th>ENQUIRY</th>
+            <th>EDIT</th>
+            <th>DELETE</th>
+        </tr>
+        <tr>
+            {% for i in data %}
+            <td>{{i.id}}</td>
+            <td>{{i.Stuname}}</td>
+            <td>{{i.Contact}}</td>
+            <td>{{i.Email}}</td>
+            <td>{{i.Enquiry}}</td>
+        <td><a href="{% url 'editpage' i.id %}">UPDATE</a></td>
+        <td><a href="{% url 'delete' i.id %}">DELETE</a></td>
+        </tr>
+        {% endfor %}
+        </tr>
+    </table>
+        
+    <form action="{% url 'ureges' %}" method="post">
+        {% csrf_token %}
+        <button id="dbtn">LOGOUT</button>
+    </form>
+</body>
+</html>

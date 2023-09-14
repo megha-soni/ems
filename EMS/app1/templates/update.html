@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+</head>
+<body bgcolor="lightblue">
+    <center>
+        <div class="form">
+            <center>  <h1 style="color: black;">Update Form</h1></center>
+        <form action="{% url 'update' data.id %}" method="post">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>Studentname</td>
+                    <td><input type="text" name="sname" id="" value="{{data.Stuname}}"></td>
+                </tr>
+                
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" id="" value="{{data.Email}}"></td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td><input type="tel" name="contact" id="" value="{{data.Contact}}"></td>
+                </tr>
+                <tr>
+                    <td>Enquiry</td>
+                    <td><input type="text" name="enquiry" id="" value="{{data.Enquiry}}"></td>
+                </tr>
+                <tr> 
+                    <td><input type="submit" value="Update"></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+</body>
+</html>
